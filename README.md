@@ -1,7 +1,7 @@
 
 # Website Screenshot Tool
 
-This tool is a combination of two scripts: one that extracts all internal URLs from a given WordPress site and another that takes screenshots of those URLs using Puppeteer. This can be useful for various purposes, such as archiving web pages, testing visual aspects of a site, or monitoring changes.
+This tool is a combination of two scripts: one that extracts all internal URLs from a given site and another that takes screenshots of those URLs using Puppeteer. This can be useful for various purposes, such as archiving web pages, testing visual aspects of a site, or monitoring changes.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ Run the following command in your terminal:
 
 ### 2. Install Python Dependencies
 
-You'll also need the *requests* and *beautifulsoup4* libraries to extract URLs from your WordPress site.
+You'll also need the *requests* and *beautifulsoup4* libraries to extract URLs from your site.
 
 Install them using pip:
 
@@ -31,11 +31,11 @@ Install them using pip:
 
 ## Usage
 
-### Step 1: Extract URLs from Your WordPress Site
+### Step 1: Extract URLs from Your Site
 
-The first script extracts all internal URLs from your WordPress site's homepage and saves them to a file called **urls.txt**.
+The first script extracts all internal URLs from your site's homepage and saves them to a file called **urls.txt**.
 
-1. Open the **extract_urls** file and add the URL of your WordPress site in the **site_url** variable.
+1. Open the **extract_urls** file and add the URL of your site in the **site_url** variable.
 2. Run the Python script:
 
 - *python extract_urls.py*
@@ -72,7 +72,7 @@ This script will read the **urls.txt** file, navigate to each URL, and take a fu
 
 ## Notes
 
-- Ensure your WordPress site URL is set correctly in the Python script before running it.
+- Ensure your site URL is set correctly in the Python script before running it.
 - The **screenshots** directory must exist in the same directory as the **take_screenshots.js** file. If it doesn't exist, you'll need to create it.
 
 ## Troubleshooting
